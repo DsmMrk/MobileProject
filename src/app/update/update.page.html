@@ -1,0 +1,48 @@
+<ion-row class="ion-text-center align-items-center">
+  <ion-col size="12">
+    <ion-text>
+      <h4>UPDATE EXPENSE</h4>
+    </ion-text>
+  </ion-col>
+  <ion-col size="12">
+    <ion-item>
+      <ion-label position="stacked">Month</ion-label>
+      <ion-select [(ngModel)]="expenseRecord.month" placeholder="Select Month">
+        <ion-select-option value="January">January</ion-select-option>
+        <ion-select-option value="Febuary">Febuary</ion-select-option>
+        <ion-select-option value="March">March</ion-select-option>
+        <ion-select-option value="April">April</ion-select-option>
+        <ion-select-option value="May">May</ion-select-option>
+        <ion-select-option value="June">June</ion-select-option>
+        <ion-select-option value="July">July</ion-select-option>
+        <ion-select-option value="August">August</ion-select-option>
+        <ion-select-option value="September">September</ion-select-option>
+        <ion-select-option value="October">October</ion-select-option>
+        <ion-select-option value="November">November</ion-select-option>
+        <ion-select-option value="December">December</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-col>
+  <ion-col size="12">
+    <ion-item>
+      <ion-label position="stacked">Electric Unit</ion-label>
+      <ion-input [(ngModel)]="expenseRecord.unit" placeholder="Electric Unit"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col size="12">
+    <ion-item>
+      <ion-label position="stacked">Amount</ion-label>
+      <ion-input [(ngModel)]="expenseRecord.amount" placeholder="Amount"></ion-input>
+    </ion-item>
+  </ion-col>
+  <ion-col size="10" offset="1">
+    <ion-button expand="block" color="success" (click)="updateRecord(expenseRecord)">
+      Update
+    </ion-button>
+  </ion-col>
+  <ion-col size="10" offset="1">
+    <ion-button expand="block" color="danger" (click)="closeModalPage()">
+      Cancel
+    </ion-button>
+  </ion-col>
+</ion-row>

@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Courier New", "TH Niramit AS", monospace;
+}
+.bg-color {
+    --background: linear-gradient(-45deg
+    , #F9DE59
+    , #E8A628
+    , #F98365
+    , #C33124
+    ,#A1DFFB
+    );
+   
+}
+ion-title{
+    text-align: center;
+}
+
+
+.ion-margin{
+    width: 400px;
+    height: 500px;
+    position: relative;left: 6px;
+    position: relative;top: 10px;
+    margin-bottom: 30px;
+    --background:rgba(255, 255, 255, 0.61);
+}
+.img-card{
+   width: 100%;  
+   height: 100%;
+   position: relative;top: 5px;
+   position: relative;left: -5px;
+  
+}
+.topic-label{
+    // font-weight: 1300;
+    font-size:25px;
+    // font-style:bold;
+    position: relative; left: 10px;
+    display: flex;
+}
+.topic-detail{
+    position: relative; left: 15px;
+    font-size:18px;
+    font-weight: bold;
+    font-style:bold;
+    
+  
+    
+}
+.img-img{
+    border-radius: 10px;
+}
+
+ion-toolbar {
+    --background: linear-gradient(-45deg, #7DA7D9
+    , #8493CA
+    , #8781BD
+    , #F4989D  );
+    --color: #ffffff;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 15s ease infinite;
+    -moz-animation: Gradient 15s ease infinite;
+    animation: Gradient 15s ease infinite;
+    --ion-color-base: transparent !important;
+  }
+  

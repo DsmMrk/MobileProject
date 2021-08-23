@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Courier New", "TH Niramit AS", monospace;
+}
+.bg-color {
+    --background:#3C3F4E;
+}
+ion-title{
+    text-align: center;
+}
+
+ion-toolbar {
+    --background:#3C3F4E;
+}

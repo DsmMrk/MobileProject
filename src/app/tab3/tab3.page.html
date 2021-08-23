@@ -1,0 +1,79 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      National News
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content fullscreen>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div *ngFor="let news of newsArray">
+          <div class="movie-card" [ngStyle]="{'background-image': 'url(' + news.urlToImage + ')'}" (click)="getDetails(news)">
+            <div class="movie-card__overlay"></div>
+            <div class="movie-card__share">
+            </div>
+            <div class="movie-card__content">
+              <div class="movie-card__header">
+                <h1 class="movie-card__title">{{news.title}}</h1>
+                <h4 class="movie-card__info">{{news.publishedAt | date}}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+<!-- 
+<ion-card class="card1-tab3" *ngIf="!isUploading && !isUploaded">
+
+</ion-card>
+<label style="color: rgb(255, 255, 255);" class="label1-tab3">Choose Images to Upload</label>
+
+  <!-- =================== -->
+  <!-- <ion-button class="btn1-tabs3" >
+    <input type="file" (change)="uploadImage($event.target.files)" />
+  </ion-button>
+  
+  <ion-button type="submit" [enable]="!isUploading && !isUploaded" class="btn2-tabs-3">Submit</ion-button> -->
+       -->
+   
+    
+
+
+<!-- <ion-content [fullscreen]="true"> -->
+  
+
+    <!-- <ion-card class="ion-text-center" *ngIf="!isUploading && !isUploaded">
+      <ion-card-header>
+        <ion-card-title>Choose Images to Upload</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content> -->
+        <!-- <ion-button color="primary" shape="round" size="medium">
+          <input type="file" (change)="uploadImage($event.target.files)" />
+        </ion-button> -->
+        <!-- <ion-item id="rounded">
+          <ion-label fixed>Input news detail : </ion-label>
+          <ion-input type="text" value=""></ion-input>
+        </ion-item> -->
+        <!-- <ion-button type="submit" [enable]="!isUploading && !isUploaded">Submit</ion-button>
+      </ion-card-content>
+    </ion-card>
+    <ion-card-content>
+    <ion-item class="it1">
+      <ion-label class="label_1" position="stacked" style="color: white;">Full Name</ion-label><br/>
+      <ion-input class="label_1_1"
+        [(ngModel)]="expenseRecord.detail"
+        placeholder="fill your fullname" style="color: white;"
+      ></ion-input>
+    </ion-item>
+  <br/>
+</ion-card-content>
+  </div> -->
+<!-- </ion-content> -->

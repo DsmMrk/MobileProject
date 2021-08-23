@@ -1,0 +1,71 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title style="color: white;">
+      Category
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="bg-color" [fullscreen]="true">
+
+  <ion-button class="btn1-tab2" (click)="business()" >
+    <ion-icon name="subway" class="icon-bg"></ion-icon>
+  </ion-button>
+  <ion-button class="btn2-tab2" (click)="entertainment()">
+    <ion-icon name="star" class="icon-bg"></ion-icon>
+  </ion-button><br/><br/>
+  <ion-button class="btn3-tab2" (click)="health()">
+    <ion-icon name="body-outline" class="icon-bg"></ion-icon> 
+  </ion-button>
+  <ion-button class="btn4-tab2" (click)="science()">
+    <ion-icon name="color-filter-outline" class="icon-bg"></ion-icon>
+  </ion-button><br/><br/>
+  <ion-button class="btn5-tab2" (click)="sport()">
+    <ion-icon name="football" class="icon-bg"></ion-icon>
+  </ion-button>
+  <ion-button class="btn6-tab2" (click)="technology()">
+    <ion-icon name="desktop-outline" class="icon-bg"></ion-icon>
+  </ion-button><br/><br/>
+  <!-- <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home Expense</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-row>
+    <ion-col size="12">
+      <ion-row>
+        <ion-item-divider>
+          <ion-col size="3">
+            Month
+          </ion-col>
+          <ion-col size="2">
+            Unit
+          </ion-col>
+          <ion-col size="3" class="ion-text-center align-items-center">
+            Amount
+          </ion-col>
+        </ion-item-divider>
+      </ion-row>
+      <ion-row class="align-items-center" style="margin: 5px" *ngFor="let record of allExpenses; let i = index">
+        <ion-col size="3">
+          <ion-note style="padding-left: 5px">{{record.month}}</ion-note>
+        </ion-col>
+        <ion-col size="2">
+          <ion-note style="padding-left: 10px">{{record.unit}}</ion-note>
+        </ion-col>
+        <ion-col size="3">
+          <ion-note style="padding-left: 10px">{{record.amount}}</ion-note>
+        </ion-col>
+        <ion-col size="4">
+          <ion-button size="small" color="primary" (click)="updateRecord(record)">
+            <ion-icon name="create-outline"></ion-icon>
+          </ion-button>
+          <ion-button size="small" color="danger" (click)="deleteRecord(record.id)">
+            <ion-icon name="trash-outline"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+  </ion-row> -->
+
+</ion-content>

@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Courier New", "TH Niramit AS", monospace;
+}
+.bg-color {
+    --background:#3C3F4E;
+}
+ion-title{
+    text-align: center;
+}
+
+ion-toolbar {
+    --background:#3C3F4E;
+}
+.card1-tab3{
+    height: 200px;
+    width: 250px;
+    position: relative;top: -50px;
+    position: relative;left: 90px;
+}
+
+
+.label1-tab3{
+    font-size: 20px;
+    position: relative;top: -117px;
+    position: relative;left: 70px;
+    
+
+}
+.btn1-tabs3{
+    width: 370px;
+    height: 50px;
+    --background: white;
+    border-radius: 7px;
+    position: relative;top: -190px;
+    position: relative;left: 25px;
+}
+.btn2-tabs-3{
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    --background:#EC2448;
+    position: relative;top: -99px;
+    position: relative;left: 115px;
+}
+// ===========================
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,800');
+
+$primary-color: #cfd6e1;
+$bg-color:#dce1e5;
+$title-color: #9ac7fa;
+$font-stack-content: 'Montserrat', helvetica, arial, sans-serif;
+$font-stack-header: 'Montserrat', helvetica, arial, sans-serif;
+$secondary-color: #2a9fff;
+
+*,*::before, *::after {
+  box-sizing:inherit;
+}
+
+* {
+  transition: .4s;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font-family: inherit;
+  border: 0;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
+}
+
+
+.movie-card {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width:100%;
+  max-width: 800px;
+  height: 100%;
+  min-height: 300px;
+  display: block;
+  margin: 2vh auto;
+  border-radius: 8px;
+  box-shadow: 0px 8px 12px 0px rgba(0,0,0,0.25);
+  position: relative;
+  @media screen and (max-width: 800px) {
+    width: 95%;
+    max-width: 95%;
+  }
+  @media screen and (max-width: 600px) {
+    background-position:50% 0%;
+    background-size: cover;
+    height: 400px;
+  }
+  &__overlay {
+    width:100%;
+    height: 100%;
+    border-radius: 8px;
+    background: linear-gradient(to right, rgba(42,159,255,.2) 0%,rgba(33,33,32,1) 60%,rgba(33,33,32,1) 100%);
+    background-blend-mode: multiply;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    @media screen and (max-width: 600px) {
+      background: linear-gradient(to bottom, rgba(42,159,255,.2) 0%,rgba(33,33,32,1) 60%,rgba(33,33,32,1) 100%);
+    }
+  }
+  &__share {
+    padding: 1em;
+    display: inline-block;
+    width: 100%;
+    max-width: 130px;
+    @media screen and (max-width: 600px) {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__icon {
+    color: #ffffff;
+    mix-blend-mode: lighten;
+    opacity: .4;
+    background: none;
+    padding: 0;
+    &:hover {
+      opacity:1;
+      mix-blend-mode: lighten;
+    }
+    &:not(:first-of-type) {
+      margin-left: 5px;
+    }
+    i {
+      font-size: 1.2em;
+    }
+  }
+  &__content {
+    width: 50%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position:relative;
+    float: right;
+    padding: 1em;
+    padding-bottom: 1em;
+    h1{
+      font-size: 22px;
+    }
+    @media screen and (max-width: 1000px) {
+      width: 50%;
+    }
+    @media screen and (max-width: 600px) {
+      margin-top: 50%;
+      width: 100%;
+      float: inherit;
+      max-width: 100%;
+      padding: 0 1em 1em;
+      h1{
+        font-size: 20px;
+      }
+    }
+  }
+  &__header {
+    margin-bottom: 2em;
+  }
+  &__title {
+    color: #ffffff;
+    margin-bottom: .25em;
+    opacity: .75;
+  }
+  &__info {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8em;
+    color: $secondary-color;
+    line-height: 1;
+    margin: 0;
+    font-weight: 700;
+    opacity:.5;
+  }
+  &__desc {
+    font-weight: 300;
+    opacity: .84;
+    margin-bottom: 2em;
+  }
+}
+
+h1,h2,h3 {
+  font-family: $font-stack-header;
+  letter-spacing: 2px;
+  line-height: 1;
+  font-weight: 200;
+}
+
+.btn {
+  padding: .5rem 2rem;
+  background-color: rgba(255,255,255,.4);
+  color: rgba(255,255,255,1);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 3px solid #ffffff;
+}
+
+.btn::before {
+  font-family: 'Material Icons';
+  content:'\e037';
+  vertical-align: middle;
+  font-size: 1.5em;
+  padding-right:.5em;
+}
+
+.btn-outline:hover {
+  border-color: $secondary-color;
+  color: $secondary-color;
+  box-shadow: 0px 1px 8px 0px rgba(245,199,0,.2);
+}
+
+ion-toolbar {
+  --background: linear-gradient(-45deg, #7DA7D9
+  , #8493CA
+  , #8781BD
+  , #F4989D  );
+  --color: #ffffff;
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  --ion-color-base: transparent !important;
+}
+
+
+// @-webkit-keyframes Gradient {
+//   0% {
+//     background-position: 0% 50%
+//   }
+//   50% {
+//     background-position: 100% 50%
+//   }
+//   100% {
+//     background-position: 0% 50%
+//   }
+// }
+
+// @-moz-keyframes Gradient {
+//   0% {
+//     background-position: 0% 50%
+//   }
+//   50% {
+//     background-position: 100% 50%
+//   }
+//   100% {
+//     background-position: 0% 50%
+//   }
+// }
+
+// @keyframes Gradient {
+//   0% {
+//     background-position: 0% 50%
+//   }
+//   50% {
+//     background-position: 100% 50%
+//   }
+//   100% {
+//     background-position: 0% 50%
+//   }
+// }

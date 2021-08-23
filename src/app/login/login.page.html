@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    </style>
+    <center><ion-title style="font-family:Anton;">Login</ion-title></center>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img style="display: block; margin: auto; height: 75%; width: 75%" src="../../assets/icon/2.png">
+    <form (ngSubmit)="login()" [formGroup]="loginForm" novalidate>
+      <ion-list>
+        <ion-item>
+          <ion-input type="text" placeholder="Email Address" formControlName="email" value=""></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input type="password" placeholder="Password" formControlName="password" value=""></ion-input>
+        </ion-item>
+      </ion-list>
+      <ion-button expand="block" type="submit" color="warning">
+        <ion-icon slot="start" name="key"></ion-icon>
+        Login
+      </ion-button>
+    </form>
+  </ion-card>
+</ion-content>

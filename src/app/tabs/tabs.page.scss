@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Courier New", "TH Niramit AS", monospace;
+}
+ion-tabs{
+    background-color:#3C3F4E;
+}
+ion-tab-bar{
+    border-radius: 10px;
+    width: 390px;
+    --background: rgb(255, 255, 255);
+    position: relative;left: 10px;
+    position: relative;top: -10px;
+    
+}
+ion-label{
+    display: none;
+    
+}
+ion-tab-bar {
+    .bart1{
+        color: #797979;
+    }
+    .bart2{
+        color: #797979;
+    }
+    .bart3{
+        color: #797979;
+    }
+    .bart4{
+        color: #797979;
+    }
+    .bart5{
+        color: #797979;
+    }
+    .bart1:hover{
+        color: #E52346;
+    }
+    .bart2:hover{
+        color: #E52346;
+    }
+    .bart3:hover{
+        color: #E52346;
+    }
+    .bart4:hover{
+        color: #E52346;
+    }
+    .bart5:hover{
+        color: #E52346;
+    }  
+}

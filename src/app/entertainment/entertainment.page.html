@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" style="color: white;"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Entertainment</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div *ngFor="let news of newsArray">
+          <div class="movie-card" [ngStyle]="{'background-image': 'url(' + news.urlToImage + ')'}" (click)="getDetails(news)">
+            <div class="movie-card__overlay"></div>
+            <div class="movie-card__share">
+            </div>
+            <div class="movie-card__content">
+              <div class="movie-card__header">
+                <h1 class="movie-card__title">{{news.title}}</h1>
+                <h4 class="movie-card__info">{{news.publishedAt | date}}</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
